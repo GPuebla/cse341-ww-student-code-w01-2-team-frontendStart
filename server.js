@@ -5,6 +5,14 @@ const app = express();
 app.get('/', (req, res) => {
   res.send("Hello");
 });
+
+app.get('/1', (req, res) => {
+  res.send("HI MAN");
+});
+
+app.get('/2', (req, res) => {
+  res.send("YOU'RE THE BEST");
+});
  
 app.listen(process.env.PORT || 3000, () => {
   console.log('Web Server is listening at port ' + (process.env.PORT || 3000));
